@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <title>Document</title>
+    {% block head %}{%endblock%}
+</head>
+<body>
+    <!-- As a link -->
+<nav class="navbar bg-body-tertiary p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/" style="font-size:2rem;">TO DO APP</a>
+    </div>
+  </nav>
+    {% block body %}{%endblock%}
+    
+</body>
+</html>
